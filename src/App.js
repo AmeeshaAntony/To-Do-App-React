@@ -6,7 +6,7 @@ function App() {
   const [todo, setTodo] = useState('');
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const today = new Date().getDay(); // Get the current day index (0-6)
-
+clearInterval
   const addTodo = () => {
     if (todo.trim() !== '') {
       setTodos([...toDos, {id : Date.now(),text : todo,status : false }]); // Corrected usage of spread operator
